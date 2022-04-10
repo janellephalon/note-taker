@@ -1,5 +1,6 @@
 // Dependencies 
 const fs = require('fs');
+const router = require('express').Router();
 
 // Linking Notes 
 // const db = require("../db/db.json")
@@ -7,32 +8,34 @@ var db = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
 module.exports = function(app) {
 
-    // GET Route
-    app.get("/api/notes", function (req, res) {
+    // GET Route  
+    router.get("/notes/", function (req, res) {
         res.json(db);
     });
 
-    // GET by ID
-    app.get("/api/notes/:id", function (req, res) {
-        res.json(data[Number(req.params.id)]);
-    });
+    // POST Route - Not Correct Route 
+    router.post("/notes/", function (req, res) {
+        const newNote = db.req.body;
+        if (length === 0) {
+            newNote.id = 1
+        } else {
+            newNote.id = db[db.length-1].id + 1;
+        }
+        db.push(newNote);
+        let jsonNotes = JSON.stringify(db);
 
-    // POST Route
-    app.post("/api/notes", function (req, res) {
-        let newNote = req.body;
-        let uniqueID = (data.length).toString();
-        console.log(uniqueID);
-        newNote.id = uniqueID;
-        data.push(newNote);
 
-    fs.writeFileSync("./db/db.json", JSON.stringify(data), function(err) {
-        if(err) throw(err);
-    });
-    res.json(db);
+        fs.writeFileSync("./db/db.json", jsonNotes, function(err){
+            if(err) {
+                return console.logg(err);
+            }
+            console.log("Success!");
+        });
+        res.json(data);
     });
 
     // DELETE Route 
-    app.delete("/api/notes/:id", function (req, res) {
+    router.delete("/api/notes/:id", function (req, res) {
         let noteID = req.params.id;
         let newID = 0;
         console.log(`Deleting note with id ${noteID}`);

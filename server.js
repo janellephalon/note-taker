@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/assets", express.static("./assets"));
 
 // Routes
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes')(app);
+const htmlRoutes = require('./routes/htmlRoutes')(app);
 
 // Listener 
 app.listen(PORT, () => {
