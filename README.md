@@ -1,32 +1,22 @@
 # Express Note Taker - Homework 11
-The goal of this project is to modify the starter code to create an application called Note Taker. 
+The application is designed to write, save, and delete notes - helping users stay organized and focused throughout their busy day(s)!
 
 ## Summary
-
-
-## Table of Contents 
-* Technology Used
-* Links
-* Screenshots
-* Usage
-* Credits
-* License
+The goal of this project is to modify the starter code to create an application called Note Taker using Express.js. Note Taker will use Express backend to save and retreive note data from a JSON file. 
 
 ## Technology Used 
 * Visual Studio Code 
 * Node.js
 * Express.js
 * GitHub
-* Heroku 
 
 ## Links
-* Github Repository
-* Deployed Application 
+* Github Repository: https://github.com/janellephalon/note-taker 
+* Deployed Application: 
 
 ## Screen Shots 
-
-## Usage
+* Insomnia Video Tutorial: https://drive.google.com/file/d/1GVycBtL3xgiwIp5ILHAqQ7MNEbQMf7Ju/view?usp=sharing
 
 ## Credits
-
-## License
+* Janelle Phalon - Columbia University Coding Bootcamp 
+* Columbia Coding Bootcamp Start Code: https://github.com/coding-boot-camp/miniature-eureka 
