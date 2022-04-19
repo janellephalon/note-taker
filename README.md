@@ -2,7 +2,7 @@
 The application is designed to write, save, and delete notes - helping users stay organized and focused throughout their busy day(s)!
 
 ## Summary
-The goal of this project is to modify the starter code to create an application called Note Taker using Express.js. Note Taker will use Express backend to save and retreive note data from a JSON file. 
+The goal of this project is to modify the starter code to create an application called Note Taker. The application uses Express.js backend to save and retreive note data from a JSON file. 
 
 ## Technology Used 
 * Visual Studio Code 
