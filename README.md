@@ -12,7 +12,7 @@ The goal of this project is to modify the starter code to create an application 
 
 ## Links
 * Github Repository: https://github.com/janellephalon/note-taker 
-* Deployed Application: 
+* Deployed Application through Heroku: https://guarded-coast-29045.herokuapp.com/
 
 ## Screen Shots 
 * Insomnia Video Tutorial: https://drive.google.com/file/d/1GVycBtL3xgiwIp5ILHAqQ7MNEbQMf7Ju/view?usp=sharing
