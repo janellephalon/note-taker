@@ -11,7 +11,7 @@ The goal of this project is to modify the starter code to create an application 
 * GitHub
 
 ## Links
-* Github Repository: https://github.com/janellephalon/note-taker 
+* Github Repository: https://github.com/janellephalon/remind-me-note-taker 
 * Deployed Application through Heroku: https://guarded-coast-29045.herokuapp.com/
 
 ## Screen Shots 
