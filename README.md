@@ -11,7 +11,7 @@ The goal of this project is to modify the starter code to create an application 
 * [Usage](#usage)
 * [Links](#links)
 * [Demo](#demo)
-* Contributors[#contributors)
+* Contributors(#contributors)
 
 
 ## User Story
